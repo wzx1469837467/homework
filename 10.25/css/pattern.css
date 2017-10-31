@@ -1,0 +1,284 @@
+body, h2, p, span,em{
+	padding: 0px;
+	margin: 0px;
+}
+li{
+	list-style:none;
+}
+.subject{
+	width: 980px;
+	height:1386px;
+	margin:0 auto;
+}
+.hed{
+	width: 892px;
+	height: 63px;
+	border-bottom: 3px solid #d6dee0;
+	margin: 0px 0px 0px 45px;
+	position: relative; 
+}
+.chief{
+	width: 110px;
+	height: 60px;
+	border: 1px solid #d6dee0;
+	padding: 0px 30px 42px 0px;
+	background-color: #d45d5c;
+	color: #ffffff;
+
+}
+.chief1{
+	position: absolute;
+	left: 830px;
+	top: 40px;
+	color:#e6a9a9;
+}
+/*第2部分*/
+.chieftain{
+	width: 640px;
+	height: 300px;
+	margin: 34px 0px 0px 45px;
+	background-image: url(../img/program.png);
+	position: relative;
+}
+.summit{
+	width: 190px;
+	height: 300px;
+	border: 1px solid #d6dee0;
+	background-color: #658061;
+	opacity:0.6;
+	position: absolute;
+	left: 0px;
+	
+}
+.summit2{
+	width: 190px;
+	height: 300px;
+	border: 1px solid #d6dee0;
+	background-color: #e4b7b6;
+	opacity:0.6;
+	position: absolute;
+	left: 448px;
+}
+/*一群乱标题*/
+.rank{
+	width: 203px;
+	height:300px;
+	border-top: 3px solid #cc8091;
+	float: right;
+	position: relative;
+	bottom: 300px;
+
+}
+.rank h2{
+	text-decoration:underline;
+}
+.rank p{
+	font-size:8px;
+}
+.symbol{
+	font-size: 100px;
+	font-style:oblique;
+	color: #75b86b;	
+}
+.symbol2{
+	font-size: 50px;
+	color: #cc8091;
+}
+span .symbol3{
+	font-size: 20px; 
+}
+span .symbol4{
+	color: #bcbbba;
+}
+.sym{
+	float: right;
+	padding: 15px 30px 0px 0px;
+}
+/*段落*/
+.segment{
+	width: 624px;
+	height: 170px;
+	position: relative;
+	margin: 42px 0px 0px 46px;
+}
+.segment1{
+	width: 228px;
+	height: 170px;
+	
+}
+.segment2{
+	width: 228px;
+	height: 170px;
+	float: left;
+	position: absolute;
+	left: 258px;
+	top: 0px;
+}
+.segment3{
+	width: 228px;
+	height: 170px;
+	float: right;
+	position: absolute;
+	left: 510px;
+	top: 0px;
+}
+.segment li{
+	padding:0px 20px 0px 0px; 
+}
+.segment em{
+	color:#e1a0a0;
+}
+.segment1 span{
+	text-decoration:underline;
+	font-size: 20px;
+	color: #418c59;
+}
+.segment2 span{
+	text-decoration:underline;
+	font-size: 20px;
+	color: #d2994f;
+}
+.segment3 span{
+	text-decoration:underline;
+	font-size: 20px;
+	color: #cc7680;
+}
+/*结尾*/
+.tail{
+	width: 892px;
+	height:646px;
+	margin:0px 0px 0px 50px;
+	border-bottom: 3px solid #d6dee0;
+}
+.caption{
+	width: 416px;
+	height: 156px;
+	border-bottom: 3px solid #d6dee0;
+}
+.writing span{
+	color: #11456b;
+	font-size: 30px;
+}
+.writing em{
+	color: #f5e327;
+	font-size: 70px;
+}
+/*段落*/
+.before{
+	width: 416px;
+	margin:26px 0px 0px 0px;
+	text-indent:25px
+}
+.huge{
+	display: inline;
+	font-size: 70px;
+	float: left;
+	color: #f5e327;
+}
+.before img{
+	float: right;
+}
+/*侧面*/
+.technology{
+	width: 458px;
+	height:605px;
+	float: right;
+	position: relative;
+	bottom: 620px;
+}
+.tech{
+	width:456px;
+	height:256px;
+	background-image: url(../img/procedure.png);
+	position: relative;
+
+}
+.tech span{
+	width: 456px;
+	height: 62px;
+	border: 1px solid #d6dee0;
+	background-color: #424143;
+	position: absolute;
+	top: 192px;
+	opacity:0.6;
+	color: #72b16a;
+}
+.logy{
+	width: 128px;
+	height: 44px;
+	border-left: 3px solid #72b16a;
+	text-decoration:none;
+	font-size:30px; 
+	margin: 0px 0px 0px 10px;
+	padding:0px 0px 0px 10px;
+	line-height: 200%;
+	color: #ffffff;
+}
+/*右下*/
+.lower{
+	width: 458px;
+	height: 318px;
+	margin: 30px 0px 0px 0px;
+	background-color: #eeedd6;
+	position: relative;
+	
+}
+.bef{
+	width: 406px;
+	height: 96px;
+	margin: 0px 0px 0px 32px;
+	position: relative;
+	top: 32px;
+	font-size: 18px;
+}
+.bef em{
+	font-size: 16px;
+	line-height: 250%;
+}
+/*最后*/
+.final{
+	width: 280px;
+	height: 160px;
+	color: #ffffff;
+	border: 1px solid #d45d5c;
+	background-color: #d45d5c;
+	position: absolute;
+	top: 158px;
+}
+.final2{
+	width: 60px;
+	height:108px;
+	border-right: 3px solid #ffffff;
+	font-size: 100px;
+	position: absolute;
+	top: 20px;	
+}
+.final3{
+	position: absolute;
+	top: 90px;
+	left: 90px;
+}
+.final4{
+	position: absolute;
+	bottom: 120px;
+	left: 90px;
+	font-size:20px; 
+}
+.final5{
+	position: absolute;
+	bottom: 70px;
+	font-size: 20px;
+}
+.lead{
+	width: 170px;
+	height: 116px;
+	position: absolute;
+	top: 150px;z
+	left: 290px;
+	line-height: 150%;
+}
+.token{
+	display: inline;
+	font-size: 30px;
+	color: #d45d5c;
+}

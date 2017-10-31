@@ -1,0 +1,28 @@
+body,ul,p,img,h1,h2{
+	margin:0;
+	padding:0;
+}
+
+.on{
+	padding-left: 10px;
+}
+li{
+	padding-left: 20px;
+}
+
+.many{
+	padding-left:48px;
+
+}
+.tie{
+	line-height: 55px;
+
+}
+table{
+	padding-left:10px;
+
+}
+.copyright{
+	padding-left: 12px;
+}
+.mine{padding-top: 22px;}
