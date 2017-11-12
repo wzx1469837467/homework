@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<script>
+	function foo () {
+    var num1 = Math.random();
+    var num2 = Math.random();
+    //将多个函数包含在一个对象内进行返回，这样就能在函数外部操作当前函数内的多个变量
+    return {
+        num1: function () {
+            return num1;
+        },
+        num2: function () {
+            return num2;
+        }
+    }
+}
+}
+		</script>
+	</head>
+	<body>
+		
+	</body>
+	</html>	
