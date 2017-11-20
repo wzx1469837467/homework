@@ -20,4 +20,10 @@ a{
 	text-decoration: none;
 	color: #333;
 }
+.clearfix:after{
+    content:" ";
+    display: block;
+    clear:both;
+    height: 0px;
+}
 /*设置*/
