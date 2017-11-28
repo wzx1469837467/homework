@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>文档标题</title>
+</head>
+<body>
+	<a href="https://www.baidu.com/">
+		我的链接
+	</a>
+	<h1>
+		我的标题
+	</h1>
+</body>
+<script>
+//6个节点 
+	function getproto(obj) {//打印任意对象的原型链
+		while( (obj=Object.getprototypeof (obj) ) !=null){
+			console.log(obj);
+		}
+	}
+	//getProto(document);
+	//document-->HTMLDocument(.prototype) --HTML DOM
+	//-->Document(.prototype) --核心DOM
+	//-->Node(.prototype) --核心DOM HTMLBodyElement
+	//getProto(document.body); --查找
+	//body-->HTMLBodyElement
+		//-->HTMLElement
+			//-->Element
+				//--Node	
+	//getProto(document.body.childNodes[1]);//a
+	/*getProto(
+		document.body.childNodes[1].getAttributeNode("href"));*/
+			//href属性对象-->Attr
+			  //-->Node
+		getProto(document.body.childNodes[1].childNodes[0]);
+		//文本节点-->Text
+		//所有对象的递层关系
+</script>
+</html>
