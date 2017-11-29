@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript">
+	function ab(){
+	var x1=document.getElementById ("wbk1")
+	var x2=document.getElementById ("wbk2")
+	var x3=document.getElementById ("wbk3")
+	x3.value=Number(x1.value)+Number(x2.value);
+	x3.value=Number(x1.value)-Number(x2.value);
+	x3.value=Number(x1.value)*Number(x2.value);
+	x3.value=Number(x1.value)/Number(x2.value);
+	}
+	</script>
+</head>
+<body>
+	<input id="wbk1" type="text">
+	 <select>
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select>
+	<input id="wbk2" type="text">=
+	<input id="wbk3" type="text">
+	<button type="button" onclick="ab()">等于</button>
+</body>
+</html>
