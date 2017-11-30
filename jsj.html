@@ -3,28 +3,40 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-	<script type="text/javascript">
-	function ab(){
-	var x1=document.getElementById ("wbk1")
-	var x2=document.getElementById ("wbk2")
-	var x3=document.getElementById ("wbk3")
-	x3.value=Number(x1.value)+Number(x2.value);
-	x3.value=Number(x1.value)-Number(x2.value);
-	x3.value=Number(x1.value)*Number(x2.value);
-	x3.value=Number(x1.value)/Number(x2.value);
-	}
-	</script>
 </head>
 <body>
-	<input id="wbk1" type="text">
-	 <select>
+	<input id="wbk1" type="text" >
+	 <select id="selected">
         <option value="+">+</option>
         <option value="-">-</option>
         <option value="*">*</option>
         <option value="/">/</option>
     </select>
-	<input id="wbk2" type="text">=
+	<input id="wbk2" type="text" >=
 	<input id="wbk3" type="text">
 	<button type="button" onclick="ab()">等于</button>
+	<script type="text/javascript">
+	function ab(){
+	var wbk1=document.getElementById ("wbk1").value;
+	var wbk2=document.getElementById ("wbk2").value;
+	var wbk3=0;
+	var sed=document.getElementById ("selected").value;
+	switch(sed){
+		case "+":
+			wbk3=Number(wbk1)+Number(wbk2);
+			break;
+		case "-":	
+			wbk3=Number(wbk1)-Number(wbk2);
+			break;
+		case "*":	
+			wbk3=Number(wbk1)*Number(wbk2);
+			break;
+		case "/":	
+			wbk3=Number(wbk1)/Number(wbk2);
+			break;
+			}
+	 	document.getElementById("wbk3").value=wbk3;
+	}
+	</script>
 </body>
 </html>
