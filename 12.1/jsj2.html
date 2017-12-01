@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/styals.css">
+</head>
+<body>
+    <table id="calculater" onClick="calculater()">
+        <tr>
+            <td id="display" colspan="5"></td>
+        </tr>
+        <tr>
+            <td class="numberkey" id="deletesign">c</td>  
+            <td class="numberkey">/</td>
+            <td class="numberkey">*</td>
+            <td class="numberkey">back</td>
+        </tr>
+        <tr>
+            <td class="numberkey key" >7</td>
+            <td class="numberkey key" >8</td>
+            <td class="numberkey key" >9</td>
+            <td class="numberkey" >+</td>
+        </tr>
+        <tr>
+            <td class="numberkey key" >4</td>
+            <td class="numberkey key" >5</td>
+            <td class="numberkey key" >6</td>
+            <td class="numberkey" >-</td>
+        </tr>
+        <tr >
+            <td class="numberkey key" >1</td>
+            <td class="numberkey key" >2</td>
+            <td class="numberkey key" >3</td>
+            <td  rowspan="2" class="numberkey number" >=</td>            
+        </tr>
+         <tr >
+            <td colspan="2" class="numberkey key" >0</td>
+            <td  class="numberkey key" >.</td>            
+        </tr>
+</body>
+</html>
+<script type="text/javascript">
+var results="";
+function calculater(){
+       results=event.srcElement.innerText;
+       display.innerText=results; 
+}
+</script>
