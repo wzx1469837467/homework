@@ -4,6 +4,66 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="css/styals.css">
+    <script type="text/javascript">
+    var results="";
+    var results2="";
+    var calresults="";
+    var lastkey="";
+    var flg=1;
+    var re1=/^[\*|\/].+/;
+    var re2=/.+[\*|\/]$/;
+    var re3=/(\+|-|\*|\/)/;
+     function calculater () {
+        if (event.srcElement.innerText=="=") {
+            return;
+        }
+        if (event.srcElement.innerText=="c") {
+            results="";
+            display.innerText="0";
+            return;
+        }
+        if (event.srcElement.id=="display") {
+           return;
+         }
+        
+        if (results.match(re1)) {
+         results="";
+         return;
+      }
+        if(lastkey.match(re3)&&event.srcElement.innerText.match(re3)){
+            return;
+        }
+        if(lastkey=="="&&event.srcElement.innerText.match(re3)){
+           results=calresults;
+        }
+        
+        if (event.srcElement.innerText=="+/-"&&results!="") {
+            if (flg==-1) {
+               results=String(results2);
+               display.innerText=results;
+               flg=-flg;
+               return;
+            }
+               results2=results;
+               results = "-"+"("+results+")";
+               flg=-flg;
+               display.innerText=results;
+            return;  
+        }
+       results+=event.srcElement.innerText;
+       display.innerText=results;
+          }
+    function resultscalcaulte(){
+         if (results.match(re1)||results.match(re2)) {
+         results="";
+         return;
+      }
+      calresults=eval(results);
+      display.innerText=calresults;
+      lastkey="=";
+      results="";
+    }
+</script>
 </head>
 <body>
     <table id="calculater" onClick="calculater()">
@@ -32,7 +92,7 @@
             <td class="numberkey key" >1</td>
             <td class="numberkey key" >2</td>
             <td class="numberkey key" >3</td>
-            <td  rowspan="2" class="numberkey number" >=</td>            
+            <td  rowspan="2"  id="equality" class="numberkey number" onclick="resultscalcaulte()">=</td>            
         </tr>
          <tr >
             <td colspan="2" class="numberkey key" >0</td>
@@ -40,10 +100,3 @@
         </tr>
 </body>
 </html>
-<script type="text/javascript">
-var results="";
-function calculater(){
-       results=event.srcElement.innerText;
-       display.innerText=results; 
-}
-</script>
