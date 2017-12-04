@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript">   
+	function keyup(){  
+	    var quantity = document.getElementById("quantity").value;  
+	}   
+	// +1 
+	function numAdd(){  
+	    var quantity = document.getElementById("quantity").value;  
+	    var num_add = parseInt(quantity)+1;  
+	    var price=document.getElementById("price").value;  
+	    if(quantity==""){  
+	        num_add = 1;  
+	    }  
+	    if(num_add>=100){  
+	        document.getElementById("quantity").value=num_add-1;  
+	    }else{  
+	        document.getElementById("quantity").value=num_add;  
+	        var Num=price*num_add;  
+	        document.getElementById("totalPrice").innerHTML=Num.toFixed(2);  
+	    }  
+	}  
+	//-1 
+	function numDec(){  
+	    var quantity = document.getElementById("quantity").value;  
+	    var price=document.getElementById("price").value;  
+	    var num_dec = parseInt(quantity)-1;  
+	}  
+</script>  
+  
+</head>  
+
+<body>  
+  <button onclick="numDec()">-</button> 
+  <input type="text" id="quantity" /> 
+  <button onclick="numAdd()">+</button>  
+  <p class="sdsd">结果是 <span id="totalPrice">0</span></p>  
+  <input type="hidden" value="1" id="price" /><!--单价-->  
+</body>  
+</html>  
