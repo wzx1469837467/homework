@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div>
+		<button id="add">+</button>
+		<button id="dec">-</button>
+		<p>结果是：<span id="result">0</span></p>
+	</div>
+
+	<script>
+	var btnAdd = document.getElementById('add');//定义变量 获取元素
+	var btnDec = document.getElementById('dec');//定义变量 获取元素
+
+	btnAdd.onclick = function (){//点击事件
+		var nowResult = document.getElementById('result').innerHTML;
+		//定义变量 获取对象内容
+		document.getElementById('result').innerHTML =pareInt(nowResult) + 1;
+		//获取内容=解析字符串 解析后+1
+	}
+	btnDec.onclick = function (){//点击事件
+		var nowResult = document.getElementById('result').innerHTML;
+		//定义变量 获取对象内容
+		document.getElementById('result').innerHTML = pareInt(nowResult) - 1;
+		//获取内容=解析字符串 解析后-1
+	}	
+	</script>
+</body>
+</html>
